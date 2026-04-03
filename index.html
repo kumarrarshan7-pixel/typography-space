@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Typography Maker Pro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Inter:wght@600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<!-- 🔥 POPUNDER AD -->
+<script src="https://pl29023085.profitablecpmratenetwork.com/b3/f5/64/b3f5646d65bd87a89b4b4451d13629c0.js"></script>
+
+<style>
+body {
+  background: #000;
+  color: white;
+  text-align: center;
+  font-family: 'Poppins';
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  background: white;
+  color: black;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background: yellow;
+  font-weight: bold;
+}
+
+.preview {
+  margin: 20px;
+  padding: 40px;
+  border-radius: 15px;
+  background: #111;
+}
+
+#hookText { font-size: 28px; font-weight: bold; }
+#bodyText { margin-top: 10px; }
+#highlightText { color: yellow; margin-top: 10px; }
+</style>
+</head>
+
+<body>
+
+<h2>🔥 Typography Maker Pro</h2>
+
+<input id="hook" placeholder="Hook text">
+<input id="body" placeholder="Body text">
+<input id="highlight" placeholder="Highlight text">
+
+<br>
+
+<button onclick="updateText()">Generate</button>
+<button onclick="downloadImage()">Download</button>
+<button onclick="recordScreen()">🎬 Record Reel</button>
+
+<!-- 🔥 BANNER AD -->
+<div style="margin:20px;">
+<script>
+  atOptions = {
+    'key' : 'afcceaa612807f61a4bdaacc89196e26',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/afcceaa612807f61a4bdaacc89196e26/invoke.js"></script>
+</div>
+
+<!-- PREVIEW -->
+<div class="preview" id="preview">
+  <div id="hookText">Hook</div>
+  <div id="bodyText">Body</div>
+  <div id="highlightText">Highlight</div>
+</div>
+
+<!-- 🔥 NATIVE AD -->
+<div style="margin-top:20px;">
+<script async="async" data-cfasync="false" src="https://pl29023087.profitablecpmratenetwork.com/da29b0f0c275c9147e2435d0a1e74653/invoke.js"></script>
+<div id="container-da29b0f0c275c9147e2435d0a1e74653"></div>
+</div>
+
+<script>
+function updateText() {
+  hookText.innerText = hook.value;
+  bodyText.innerText = body.value;
+  highlightText.innerText = highlight.value;
+}
+
+function downloadImage() {
+  html2canvas(document.getElementById("preview")).then(canvas => {
+    let link = document.createElement("a");
+    link.download = "typography.png";
+    link.href = canvas.toDataURL();
+    link.click();
+  });
+}
+
+function recordScreen(){
+  alert("Use your phone screen recorder 🎬");
+}
+</script>
+
+</body>
+  </html>
